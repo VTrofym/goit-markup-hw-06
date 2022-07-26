@@ -108,6 +108,8 @@ button {
     letter-spacing: var(--letter-spacing-l);
 }
 
+
+
 .button-main:hover,
 .button-main:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -373,9 +375,8 @@ fill: var(--background-button-main);
     background-color: var(--background-color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-   
 
-    padding: 8px;
+    padding: 40px;
     text-align: end;
 }
 
@@ -385,6 +386,90 @@ fill: var(--background-button-main);
     background: var(--background-color-white);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+}
+
+.modal-data-person {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    
+    color: var(--font-сolor-black-other);
+    text-align: center;
+}
+
+.modal-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    
+    color: var(--font-сolor-black-p);
+
+    text-align: start;
+
+    margin-bottom: 4px;
+}
+
+.about-user {
+    width: 448px;
+    height: 40px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.comment {
+    width: 448px;
+    height: 120px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+.comment-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+
+    text-align: start;
+}
+
+.agreement {
+    display: flex;
+}
+
+.black-square {
+    margin-right: 8px;
+    align-items: center;
+}
+
+.about-contract {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+color: var(--font-сolor-black-p);
+
+text-align: center;
+
+margin-bottom: 30px;
+}
+
+.terms {
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration-line: underline;
+    
+    color: var(--font-сolor-blue);
 }
 
 
@@ -452,7 +537,9 @@ fill: var(--background-button-main);
     letter-spacing: 0.03em;
 }
 
-
+.button-modal-bottom {
+    margin: 0 auto;
+}
 
 
 /* виды работ */
@@ -641,7 +728,7 @@ fill: var(--font-сolor-white);
 .main-clients-link:hover .name-company,
 .main-clients-link:focus .name-company {
     fill: var(--font-сolor-blue);
-    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     
 
@@ -740,6 +827,7 @@ fill: var(--font-сolor-white);
 
 .footer-connent-networks {
     padding: 12px;
+    margin-right: 93px;
 }
 
 .conect {
@@ -781,6 +869,60 @@ fill: var(--font-сolor-white);
     background-color: var(--background-color-blue);
     
 }
+
+
+.subscription {
+    padding: 12px;
+}
+
+.subscription-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    
+    color: var(--font-сolor-white);
+
+    margin-bottom: 20px;
+}
+
+.subscription-email-button {
+    display: flex;
+    align-items: center;
+}
+
+.subscription-email {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    
+    color: rgba(255, 255, 255, 0.6);
+
+    width: 358px;
+    height: 50px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 12px;
+    margin-right: 12px;
+}
+
+.subscription-button {
+    margin: 0 auto;
+    display: flex;
+    padding: 13px 32px;
+}
+
+.icon-send {
+    margin-left: 10px;
+}
+
+
+
 
 
 
