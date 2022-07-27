@@ -53,61 +53,55 @@
                         </svg>
                     </button>
                     <p class="modal-data-person">Оставьте свои данные, мы вам перезвоним</p>
-                    <ul>
-                            <li>
-                                <p class="modal-text">Имя</p>
-                                <div class="about-user">
-                                    <svg width="12px" height="12px" class="modal-close">
-                                        <use href="./images/svg/sprite.svg#icon-Vector-human""></use>
-                                    </svg>
-                                </div>
-                            </li>
-                            <li>
-                                <p class="modal-text">Телефон</p>
-                                <div class="about-user">
-                                    <svg width="13px" height="13px" class="modal-close">
-                                        <use href="./images/svg/sprite.svg#icon-Vector-handset"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                            <li>
-                                <p class="modal-text">Почта</p>
-                                <div class="about-user">
-                                    <svg width="15px" height="12px" class="modal-close">
-                                        <use href="./images/svg/sprite.svg#icon-Vector-black-chek"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                            <li>
-                                <p class="modal-text">Комментарий</p>
-                                <div class="comment">
-                                    <p class="comment-text">Введите текст</p>
-                                </div>
-                            </li>
-                    </ul>
-                    <div class="agreement">
-                            <svg class="black-square" width="16px" height="15px">
-                                <use href="./images/svg/sprite.svg#icon-Vector-square"></use>
-                            </svg>
-                            <p class="about-contract">Соглашаюсь с рассылкой и принимаю <span class="terms">Условия договора</span></p>
-                    </div>
-                    <button class="button-main button-modal-bottom">Отправить</button>
+                    <form class="window">
+                        <div class="field">
+                            <label  class="modal-text" for="name">Имя</label>
+                            <div class="field-div">
+                                <input class="modal-block" type="text" name="username" autofocus />
+                                <svg width="12px" height="12px" class="modal-icon">
+                                    <use href="./images/svg/sprite.svg#icon-Vector-human"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label  class="modal-text" for="">Телефон</label>
+                            <div class="field-div">
+                                <input class="modal-block" type="tel" name="phone" autofocus />
+                                <svg width="13px" height="13px" class="modal-icon">
+                                    <use href="./images/svg/sprite.svg#icon-Vector-handset"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="modal-text" for="">Почта</label>
+                            <div class="field-div">
+                                <input class="modal-block" type="email" name="email" />
+                                <svg width="15px" height="12px" class="modal-icon">
+                                    <use href="./images/svg/sprite.svg#icon-Vector-black-chek"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    
+                            <label class="modal-text" for=""></label>
+                            <textarea class="modal-block modal-block-comments" type="text" name="coments" placeholder="Введите текст" autofocus></textarea>
+                        
+                            <input 
+                            class="input-check visually-hidden" 
+                            type="checkbox" 
+                            name="privasy" 
+                            value="true"
+                            id="privasy"
+                            />
+                            <label class="check-text" for="privasy">
+                            <span class="checkbox-span"></span>
+                                Соглашаюсь с рассылкой и принимаю <span class="treaty">Условия договора</span>
+                            </label>
+                            <button class="button-main button-down" type="submit">Отправить</button>
+                    </form>
                 </div>
+                
             </div>
         </section>
-
-        <!-- <button data-modal-open>Открыть модальное окно</button>
-
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero temporibus odit rerum, nihil adipisci consectetur ex perferendis ullam nemo et harum voluptatem architecto dolorum minima deserunt molestias magnam. Laboriosam, nobis officia! Molestiae, culpa totam quasi maxime fuga perspiciatis accusantium eaque excepturi aperiam harum dolores voluptas. Nemo similique quos porro dolor voluptatum quae, cupiditate doloribus provident.</p>
-                    <button data-modal-close>Закрыть</button>
-                </div>
-            </div> -->
-
-            
-
-
 
             <!-- акценты в работе -->
         <section class="for-business">
@@ -419,34 +413,25 @@
                     </li>
                 </ul>
             </div>
-            <div class="subscription">
-                <h3 class="subscription-header" >Подпишитесь на рассылку</h3>
+            <form class="subscription">
+                <h3 class="subscription-header">Подпишитесь на рассылку</h3>
                 <div class="subscription-email-button">
-                    <div class="subscription-email">E-mail</div>
-                    <buttot class="subscription-button button-main">Подписаться
+                    <input  class="subscription-email" type="text" placeholder="E-mail">
+                    <button type="submit" class="subscription-button button-main">Подписаться
                         <svg width="24px" height="24px" class="icon-send">
                             <use href="./images/svg/sprite.svg#icon-icon-send"></use>
                         </svg>
-                    </buttot>
+                    </button>
                 </div>
-            </div>
+            </form>
         </div>
     </footer>
 
-<!-- <div class="div">
-    <ul class="ul">
-        <li class="li">1</li>
-        <li class="li">2</li>
-        <li class="li">3</li>
-        <li class="li">4</li>
-        <li class="li">5</li>
-        <li class="li">6</li>
-        <li class="li">7</li>
-        <li class="li">8</li>
-        <li class="li">9</li>
-        <li class="li">10</li>
-    </ul>
-</div> -->
+
+
+
+
+
 
 <script src="./js/modal.js"></script>
 </body>

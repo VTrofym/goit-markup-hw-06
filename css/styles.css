@@ -346,6 +346,13 @@ fill: var(--background-button-main);
 }
 
 
+
+
+
+
+
+
+
 /* -------Модалньое окно ----------*/
 
 .backdrop {
@@ -356,6 +363,8 @@ fill: var(--background-button-main);
     height: 100%;
     background-color: rgb(255, 99, 71, 0.5);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    z-index: 1;
 }
 
 .backdrop.is-hidden {
@@ -386,6 +395,13 @@ fill: var(--background-button-main);
     background: var(--background-color-white);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.button-modal:hover {
+    fill: var(--font-сolor-blue);
 }
 
 .modal-data-person {
@@ -395,84 +411,122 @@ fill: var(--background-button-main);
     
     color: var(--font-сolor-black-other);
     text-align: center;
+    margin-bottom: 12px;
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .modal-text {
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     
     color: var(--font-сolor-black-p);
 
-    text-align: start;
-
     margin-bottom: 4px;
+    text-align: start;
 }
 
-.about-user {
-    width: 448px;
+.field-div {
+    position: relative;
+}
+
+.field-div:hover .modal-icon {
+    fill: var(--font-сolor-blue);
+}
+
+.modal-block {
+    padding: 11px 30px;
+    width: 100%;
     height: 40px;
     
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    padding-left: 12px;
-}
-
-.comment {
-    width: 448px;
-    height: 120px;
     
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-
-    padding: 12px 16px;
-    margin-bottom: 20px;
 }
 
-.comment-text {
+.modal-block:hover {
+    border: 1px solid var(--font-сolor-blue);
+    border-radius: 4px;
+}
+
+.modal-block-comments {
+    height: 120px;
+    padding: 12px;
+    margin-bottom: 12px;
+
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     
     color: rgba(117, 117, 117, 0.5);
-
-    text-align: start;
+    resize: none;
 }
 
-.agreement {
-    display: flex;
-}
-
-.black-square {
-    margin-right: 8px;
-    align-items: center;
-}
-
-.about-contract {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-
-color: var(--font-сolor-black-p);
-
-text-align: center;
-
-margin-bottom: 30px;
-}
-
-.terms {
+.modal-block-comments::placeholder {
+    font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+
+.treaty {
     text-decoration-line: underline;
     
     color: var(--font-сolor-blue);
 }
 
 
+
+.input-check:checked + .check-text .checkbox-span {
+    background-color: var(--background-color-blue);
+    border: transparent;
+}
+
+.check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+    color: #757575;
+}
+
+.checkbox-span {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border-radius: 4px;
+    border: 2px var(--font-сolor-black-other) solid;
+}
+
+
+
+.button-down {
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
@@ -900,6 +954,7 @@ fill: var(--font-сolor-white);
     align-items: center;
     
     color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
 
     width: 358px;
     height: 50px;
@@ -909,6 +964,7 @@ fill: var(--font-сolor-white);
     border-radius: 4px;
     padding-left: 12px;
     margin-right: 12px;
+
 }
 
 .subscription-button {
@@ -1115,32 +1171,3 @@ fill: var(--font-сolor-white);
 
 
 
-
-
-/* .li-s1-1::before {
-    margin-bottom: 56px;
-
-    display: block;
-    content: "";
-    height: 120px;
-    outline: 1px solid tomato;
-    background-image: url(../images/svg/center/antenna.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--background-color-grey);
-} */
-
-
-
-/* .header-relative {
-    max-width: 49px;
-    max-height: 48px;
-}
-
-.link.studiya.first {
-}
-
-.studiya-hover {
-    background: var(--background-color-blue);
-    border-radius: 2px;
-} */
