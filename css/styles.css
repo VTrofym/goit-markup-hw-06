@@ -30,9 +30,6 @@ a {
     color: currentColor;
 }
 
-address {
-    
-}
 
 button {
     font-family: inherit;
@@ -497,8 +494,13 @@ fill: var(--background-button-main);
 
 
 
+
+
 .input-check:checked + .check-text .checkbox-span {
     background-color: var(--background-color-blue);
+    background-image: url(../images/svg/Vector-2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     border: transparent;
 }
 
@@ -518,6 +520,12 @@ fill: var(--background-button-main);
     border-radius: 4px;
     border: 2px var(--font-сolor-black-other) solid;
 }
+
+
+
+
+
+
 
 
 
