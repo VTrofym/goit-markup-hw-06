@@ -150,7 +150,7 @@ button {
     padding-bottom: 25px;
 }
 
-.logo-blue {
+.logo--blue {
     color: var(--font-сolor-blue);
     font-family: Raleway, sans-serif;
     letter-spacing: var(--letter-spacing-m);
@@ -438,8 +438,17 @@ fill: var(--background-button-main);
     position: relative;
 }
 
-.field-div:hover .modal-icon {
+.field-div:hover .modal-icon,
+.field-div:focus .modal-icon {
     fill: var(--font-сolor-blue);
+    color: var(--font-сolor-blue);
+}
+
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .modal-block {
@@ -452,6 +461,11 @@ fill: var(--background-button-main);
     
 }
 
+.modal-check {
+    display: flex;
+    align-items: center;
+}
+
 .modal-block:hover {
     border: 1px solid var(--font-сolor-blue);
     border-radius: 4px;
@@ -460,7 +474,7 @@ fill: var(--background-button-main);
 .modal-block-comments {
     height: 120px;
     padding: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 
     font-weight: 400;
     font-size: 12px;
@@ -478,12 +492,6 @@ fill: var(--background-button-main);
     letter-spacing: 0.01em;
     
     color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-icon {
-    position: absolute;
-    left: 12px;
-    top: 11px;
 }
 
 .treaty {
@@ -519,6 +527,7 @@ fill: var(--background-button-main);
     height: 15px;
     border-radius: 4px;
     border: 2px var(--font-сolor-black-other) solid;
+    margin-right: 7px;
 }
 
 
