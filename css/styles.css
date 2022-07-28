@@ -137,7 +137,7 @@ button {
     height: 80px;
 }
 
-.header-border {
+.header__border {
     border-bottom: 1px solid var(--font-color-border);
 }
 
@@ -156,13 +156,13 @@ button {
     letter-spacing: var(--letter-spacing-m);
 }
 
-.logo-black {
+.logo--black {
     color: var(--font-сolor-black-logo);
     font-family: Raleway, sans-serif;
     letter-spacing: var(--letter-spacing-m);
 }
 
-.logo-white {
+.logo--white {
     color: var(--font-сolor-white);
     font-family: Raleway, sans-serif;
     letter-spacing: var(--letter-spacing-m);
@@ -170,11 +170,11 @@ button {
 
 
 
-.header-relative {
+.block-nav__studiya {
     position: relative;
 }
 
-.header-relative::after {
+.block-nav__studiya::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -216,14 +216,14 @@ button {
     margin-left: 93px;
 }
 
-.site-nav .link {
+.block-nav__pages .link {
     color: var(--font-сolor-black-other);
     padding-top: 32px;
     padding-bottom: 32px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav .link:hover, 
-.site-nav .link:focus {
+.block-nav__pages .link:hover, 
+.block-nav__pages .link:focus {
     color: var(--font-сolor-blue);
     
 }
@@ -232,7 +232,8 @@ button {
     color: var(--font-сolor-blue);
 }
 
-.site-nav, .mail-tel {
+.block-nav__pages,
+.mail-tel {
     padding: 0;
     margin: 0;
     display: flex;
@@ -302,7 +303,7 @@ fill: var(--background-button-main);
 
 
 
-.link-pf-main {
+.block-nav__portfolio {
     display: flex;
     align-items: center;
     margin-left: 50px;
@@ -365,8 +366,8 @@ fill: var(--background-button-main);
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+    /* opacity: 0;
+    pointer-events: none; */
 }
 
 .modal {
@@ -438,10 +439,9 @@ fill: var(--background-button-main);
     position: relative;
 }
 
-.field-div:hover .modal-icon,
-.field-div:focus .modal-icon {
+.modal-block:hover + .modal-icon,
+.modal-block:focus + .modal-icon {
     fill: var(--font-сolor-blue);
-    color: var(--font-сolor-blue);
 }
 
 .modal-icon {
@@ -464,6 +464,10 @@ fill: var(--background-button-main);
 .modal-check {
     display: flex;
     align-items: center;
+}
+
+.checkbox-span {
+    display: inline-block;
 }
 
 .modal-block:hover {
@@ -494,10 +498,16 @@ fill: var(--background-button-main);
     color: rgba(117, 117, 117, 0.5);
 }
 
+.agreement {
+    display: inline-block;
+}
+
 .treaty {
     text-decoration-line: underline;
     
     color: var(--font-сolor-blue);
+
+    display: inline-block;
 }
 
 
@@ -782,10 +792,6 @@ fill: var(--font-сolor-white);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--font-сolor-black-other);
-}
-
-.main-clients-li {
-    
 }
 
 .main-clients-list {

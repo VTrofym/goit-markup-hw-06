@@ -15,12 +15,12 @@
 <body>
 <!---------- шапка сайта ----------->
     <header class="header">
-        <div class="container">
-            <a href="./index.html" class="logo"><span class="logo-blue">Web</span><span class="logo-black">Studio</span></a>
+        <div class="container header-container">
+            <a href="./index.html" class="logo"><span class="logo--blue">Web</span><span class="logo--black">Studio</span></a>
             <nav class="block-nav">
-                <ul class="site-nav">
-                    <li class="header-relative"><a href="./index.html" class="link studiya first">Студия</li>
-                    <li class="link-pf-main"><a href="./portfolio.html" class="link portfolio portfolio-head">Портфолио</a></li>
+                <ul class="block-nav__pages">
+                    <li class="block-nav__studiya"><a href="./index.html" class="link studiya first">Студия</li>
+                    <li class="block-nav__portfolio"><a href="./portfolio.html" class="link portfolio portfolio-head">Портфолио</a></li>
                     <li><a href="#" class="link contacts">Контакты</a></li>
                 </ul>
             </nav>
@@ -84,13 +84,12 @@
                         </div>
                             <label class="modal-text" for="">Комментарий</label>
                             <textarea class="modal-block modal-block-comments" type="text" name="coments" placeholder="Введите текст" autofocus></textarea>
-                            <div class="modal-check">
                                 <input class="input-check visually-hidden" type="checkbox" name="privasy" value="true" id="privasy" />
-                                <label class="check-text" for="privasy">
-                                    <span class="checkbox-span"></span>
-                                    <span>Соглашаюсь с рассылкой и принимаю</span>
+                                <label class="check-text modal-check" for="privasy">
+                                    <span class="checkbox-span"></span> 
+                                    <span class="agreement">Соглашаюсь с рассылкой и принимаю</span>
                                     <a class="treaty" href="./index.html">Условия договора</a>
-                            </div>
+                                </label>
                             <button class="button-main button-down" type="submit">Отправить</button>
                     </form>
                 </div>
@@ -369,7 +368,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-logo-adress">
-                <a href="./index.html" class="logo"><span class="logo-blue">Web</span><span class="logo-white">Studio</span></a>
+                <a href="./index.html" class="logo"><span class="logo--blue">Web</span><span class="logo--white">Studio</span></a>
                 <address>
                     <ul class="address">
                         <li><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer" class="location"> г. Киев, пр-т Леси Украинки, 26</a></li>
